@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Poppins', sans-serif;
+
+    background:
+        radial-gradient(circle at top left, #6c63ff55, transparent 35%),
+        radial-gradient(circle at bottom right, #ff4d6d44, transparent 35%),
+        #10111a;
+
+    color: #fff;
+
+    padding: 30px;
+}
+
+
+/* =========================
+   PLAYER
+========================= */
+
+.music-player {
+    width: 100%;
+    max-width: 470px;
+
+    padding: 30px;
+
+    border-radius: 28px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    backdrop-filter: blur(20px);
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.player-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+
+.player-header h1 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+.player-header i {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #6c63ff;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   ALBUM
+========================= */
+
+.album-section {
+    text-align: center;
+}
+
+
+.album-cover {
+    width: 250px;
+    height: 250px;
+
+    margin: 0 auto 22px;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.45);
+}
+
+
+.album-cover img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s ease;
+}
+
+
+.album-cover:hover img {
+    transform: scale(1.08);
+}
+
+
+.album-section h2 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+
+.album-section p {
+    color: #aaa;
+    font-size: 15px;
+}
+
+
+/* =========================
+   PROGRESS
+========================= */
+
+.progress-section {
+    margin-top: 28px;
+}
+
+
+.time {
+    display: flex;
+    justify-content: space-between;
+
+    color: #aaa;
+
+    font-size: 13px;
+
+    margin-bottom: 8px;
+}
+
+
+input[type="range"] {
+    width: 100%;
+
+    height: 5px;
+
+    cursor: pointer;
+
+    accent-color: #6c63ff;
+}
+
+
+/* =========================
+   CONTROLS
+========================= */
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 25px;
+
+    margin: 25px 0;
+}
+
+
+.control-btn,
+.play-btn {
+    border: none;
+
+    color: #fff;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.3s ease;
+}
+
+
+.control-btn {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.1);
+
+    font-size: 18px;
+}
+
+
+.control-btn:hover {
+    background: #6c63ff;
+
+    transform: scale(1.08);
+}
+
+
+.play-btn {
+    width: 65px;
+    height: 65px;
+
+    border-radius: 50%;
+
+    background: #6c63ff;
+
+    font-size: 23px;
+
+    box-shadow:
+        0 8px 25px rgba(108, 99, 255, 0.4);
+}
+
+
+.play-btn:hover {
+    transform: scale(1.08);
+}
+
+
+/* =========================
+   VOLUME
+========================= */
+
+.volume-section {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 28px;
+}
+
+
+.volume-section i {
+    color: #aaa;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   PLAYLIST
+========================= */
+
+.playlist {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    padding-top: 22px;
+}
+
+
+.playlist-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+
+
+.playlist-header h3 {
+    font-size: 19px;
+}
+
+
+#autoplayBtn {
+    border: none;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    color: #aaa;
+
+    padding: 8px 12px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+#autoplayBtn:hover,
+#autoplayBtn.active {
+    background: #6c63ff;
+    color: white;
+}
+
+
+/* =========================
+   SONG ITEM
+========================= */
+
+.song-item {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 12px;
+
+    margin-bottom: 8px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.song-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+
+.song-item.active {
+    background: rgba(108, 99, 255, 0.25);
+
+    border-left: 3px solid #6c63ff;
+}
+
+
+.song-number {
+    width: 25px;
+
+    color: #999;
+
+    font-size: 13px;
+}
+
+
+.song-info {
+    flex: 1;
+}
+
+
+.song-info h4 {
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+.song-info p {
+    color: #888;
+
+    font-size: 12px;
+
+    margin-top: 2px;
+}
+
+
+.song-icon {
+    color: #6c63ff;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 550px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .music-player {
+        padding: 22px;
+
+        border-radius: 22px;
+    }
+
+    .album-cover {
+        width: 210px;
+        height: 210px;
+    }
+
+    .album-section h2 {
+        font-size: 22px;
+    }
+
+    .controls {
+        gap: 18px;
+    }
+
+    .play-btn {
+        width: 60px;
+        height: 60px;
+    }
+
+    .control-btn {
+        width: 44px;
+        height: 44px;
+    }
+
+}
