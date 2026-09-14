@@ -26,43 +26,77 @@ const autoplayBtn =
 ========================= */
 
 const songs = [
-
     {
-        title: "Summer Vibes",
-        artist: "Ava Johnson",
+        title: "Punjabi Vibes",
+        artist: "Punjabi Artist",
         audio: "music/song1.mp3",
         image: "images/song1.jpg"
     },
 
     {
-        title: "Midnight Dreams",
-        artist: "Daniel Smith",
+        title: "Jab Se Tum Ko Dekha",
+        artist: "Indian Artist",
         audio: "music/song2.mp3",
         image: "images/song2.jpg"
     },
 
     {
-        title: "Ocean Waves",
-        artist: "Luna Ray",
+        title: "Zara Zara",
+        artist: "Indian Artist",
         audio: "music/song3.mp3",
         image: "images/song3.jpg"
     },
 
     {
-        title: "Golden Sky",
-        artist: "Alex Morgan",
+        title: "Khwab Ka Musafir",
+        artist: "Indian Artist",
         audio: "music/song4.mp3",
         image: "images/song4.jpg"
     },
+
     {
-    title: "Punjabi Vibes",
-    artist: "Punjabi Artist",
-    audio: "music/song5.mp3",
-    image: "images/song5.jpg"
-}
+        title: "Ishq Jhalak",
+        artist: "Indian Artist",
+        audio: "music/song5.mp3",
+        image: "images/song5.jpg"
+    },
+
+    {
+        title: "Alone",
+        artist: "Indian Artist",
+        audio: "music/song6.mp3",
+        image: "images/song6.jpg"
+    },
+
+    {
+        title: "Summer Vibes",
+        artist: "Ava Johnson",
+        audio: "music/song7.mp3",
+        image: "images/song7.jpg"
+    },
+
+    {
+        title: "Midnight Dreams",
+        artist: "Daniel Smith",
+        audio: "music/song8.mp3",
+        image: "images/song8.jpg"
+    },
+
+    {
+        title: "Ocean Waves",
+        artist: "Luna Ray",
+        audio: "music/song9.mp3",
+        image: "images/song9.jpg"
+    },
+
+    {
+        title: "Golden Sky",
+        artist: "Alex Morgan",
+        audio: "music/song10.mp3",
+        image: "images/song10.jpg"
+    }
 
 ];
-
 
 let currentSong = 0;
 
