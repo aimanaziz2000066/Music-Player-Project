@@ -53,7 +53,13 @@ const songs = [
         artist: "Alex Morgan",
         audio: "music/song4.mp3",
         image: "images/song4.jpg"
-    }
+    },
+    {
+    title: "Punjabi Vibes",
+    artist: "Punjabi Artist",
+    audio: "music/song5.mp3",
+    image: "images/song5.jpg"
+}
 
 ];
 
