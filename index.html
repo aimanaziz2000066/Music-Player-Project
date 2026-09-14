@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="music-player">
+
+        <!-- Header -->
+        <div class="player-header">
+            <h1>Music Player</h1>
+            <i class="fa-solid fa-music"></i>
+        </div>
+
+        <!-- Album -->
+        <div class="album-section">
+            <div class="album-cover">
+                <img id="albumImage" src="images/song1.jpg" alt="Album Cover">
+            </div>
+
+            <h2 id="songTitle">Summer Vibes</h2>
+            <p id="artistName">Ava Johnson</p>
+        </div>
+
+        <!-- Progress -->
+        <div class="progress-section">
+
+            <div class="time">
+                <span id="currentTime">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+
+            <input
+                type="range"
+                id="progressBar"
+                min="0"
+                value="0"
+                step="1"
+            >
+
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+
+            <button id="previousBtn" class="control-btn">
+                <i class="fa-solid fa-backward-step"></i>
+            </button>
+
+            <button id="playBtn" class="play-btn">
+                <i class="fa-solid fa-play"></i>
+            </button>
+
+            <button id="nextBtn" class="control-btn">
+                <i class="fa-solid fa-forward-step"></i>
+            </button>
+
+        </div>
+
+        <!-- Volume -->
+        <div class="volume-section">
+
+            <i class="fa-solid fa-volume-low"></i>
+
+            <input
+                type="range"
+                id="volumeBar"
+                min="0"
+                max="1"
+                value="0.7"
+                step="0.01"
+            >
+
+            <i class="fa-solid fa-volume-high"></i>
+
+        </div>
+
+        <!-- Playlist -->
+        <div class="playlist">
+
+            <div class="playlist-header">
+                <h3>Playlist</h3>
+
+                <button id="autoplayBtn">
+                    <i class="fa-solid fa-repeat"></i>
+                    Autoplay
+                </button>
+            </div>
+
+            <div id="playlistContainer"></div>
+
+        </div>
+
+    </div>
+
+    <audio id="audio"></audio>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
