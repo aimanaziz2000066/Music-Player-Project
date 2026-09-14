@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 body {
     min-height: 100vh;
@@ -22,8 +20,7 @@ body {
         #10111a;
 
     color: #fff;
-
-    padding: 30px;
+    padding: 40px;
 }
 
 
@@ -33,11 +30,11 @@ body {
 
 .music-player {
     width: 100%;
-    max-width: 470px;
+    max-width: 650px;
 
-    padding: 30px;
+    padding: 45px;
 
-    border-radius: 28px;
+    border-radius: 32px;
 
     background: rgba(255, 255, 255, 0.08);
 
@@ -59,19 +56,17 @@ body {
     justify-content: space-between;
     align-items: center;
 
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 
-
 .player-header h1 {
-    font-size: 25px;
+    font-size: 36px;
     font-weight: 700;
 }
 
-
 .player-header i {
-    width: 45px;
-    height: 45px;
+    width: 55px;
+    height: 55px;
 
     display: flex;
     justify-content: center;
@@ -81,7 +76,7 @@ body {
 
     background: #6c63ff;
 
-    font-size: 18px;
+    font-size: 23px;
 }
 
 
@@ -93,21 +88,19 @@ body {
     text-align: center;
 }
 
-
 .album-cover {
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
 
-    margin: 0 auto 22px;
+    margin: 0 auto 30px;
 
-    border-radius: 22px;
+    border-radius: 25px;
 
     overflow: hidden;
 
     box-shadow:
         0 15px 40px rgba(0, 0, 0, 0.45);
 }
-
 
 .album-cover img {
     width: 100%;
@@ -118,21 +111,18 @@ body {
     transition: 0.5s ease;
 }
 
-
 .album-cover:hover img {
     transform: scale(1.08);
 }
 
-
 .album-section h2 {
-    font-size: 25px;
-    margin-bottom: 5px;
+    font-size: 36px;
+    margin-bottom: 7px;
 }
-
 
 .album-section p {
     color: #aaa;
-    font-size: 15px;
+    font-size: 19px;
 }
 
 
@@ -141,9 +131,8 @@ body {
 ========================= */
 
 .progress-section {
-    margin-top: 28px;
+    margin-top: 35px;
 }
-
 
 .time {
     display: flex;
@@ -151,16 +140,15 @@ body {
 
     color: #aaa;
 
-    font-size: 13px;
+    font-size: 16px;
 
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
-
 
 input[type="range"] {
     width: 100%;
 
-    height: 5px;
+    height: 7px;
 
     cursor: pointer;
 
@@ -177,11 +165,10 @@ input[type="range"] {
     justify-content: center;
     align-items: center;
 
-    gap: 25px;
+    gap: 35px;
 
-    margin: 25px 0;
+    margin: 35px 0;
 }
-
 
 .control-btn,
 .play-btn {
@@ -198,18 +185,16 @@ input[type="range"] {
     transition: 0.3s ease;
 }
 
-
 .control-btn {
-    width: 48px;
-    height: 48px;
+    width: 60px;
+    height: 60px;
 
     border-radius: 50%;
 
     background: rgba(255, 255, 255, 0.1);
 
-    font-size: 18px;
+    font-size: 22px;
 }
-
 
 .control-btn:hover {
     background: #6c63ff;
@@ -217,21 +202,19 @@ input[type="range"] {
     transform: scale(1.08);
 }
 
-
 .play-btn {
-    width: 65px;
-    height: 65px;
+    width: 85px;
+    height: 85px;
 
     border-radius: 50%;
 
     background: #6c63ff;
 
-    font-size: 23px;
+    font-size: 30px;
 
     box-shadow:
         0 8px 25px rgba(108, 99, 255, 0.4);
 }
-
 
 .play-btn:hover {
     transform: scale(1.08);
@@ -246,16 +229,15 @@ input[type="range"] {
     display: flex;
     align-items: center;
 
-    gap: 12px;
+    gap: 15px;
 
-    margin-bottom: 28px;
+    margin-bottom: 35px;
 }
-
 
 .volume-section i {
     color: #aaa;
 
-    font-size: 15px;
+    font-size: 20px;
 }
 
 
@@ -266,23 +248,20 @@ input[type="range"] {
 .playlist {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 
-    padding-top: 22px;
+    padding-top: 28px;
 }
-
 
 .playlist-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
-
 
 .playlist-header h3 {
-    font-size: 19px;
+    font-size: 26px;
 }
-
 
 #autoplayBtn {
     border: none;
@@ -291,7 +270,7 @@ input[type="range"] {
 
     color: #aaa;
 
-    padding: 8px 12px;
+    padding: 10px 16px;
 
     border-radius: 8px;
 
@@ -299,7 +278,6 @@ input[type="range"] {
 
     transition: 0.3s;
 }
-
 
 #autoplayBtn:hover,
 #autoplayBtn.active {
@@ -316,66 +294,59 @@ input[type="range"] {
     display: flex;
     align-items: center;
 
-    gap: 12px;
+    gap: 15px;
 
-    padding: 12px;
+    padding: 16px;
 
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 
-    border-radius: 12px;
+    border-radius: 13px;
 
     cursor: pointer;
 
     transition: 0.3s;
 }
 
-
 .song-item:hover {
     background: rgba(255, 255, 255, 0.08);
 }
 
-
 .song-item.active {
     background: rgba(108, 99, 255, 0.25);
 
-    border-left: 3px solid #6c63ff;
+    border-left: 4px solid #6c63ff;
 }
 
-
 .song-number {
-    width: 25px;
+    width: 30px;
 
     color: #999;
 
-    font-size: 13px;
+    font-size: 16px;
 }
-
 
 .song-info {
     flex: 1;
 }
 
-
 .song-info h4 {
-    font-size: 14px;
+    font-size: 19px;
 
     font-weight: 600;
 }
 
-
 .song-info p {
     color: #888;
 
-    font-size: 12px;
+    font-size: 15px;
 
-    margin-top: 2px;
+    margin-top: 3px;
 }
-
 
 .song-icon {
     color: #6c63ff;
 
-    font-size: 14px;
+    font-size: 18px;
 }
 
 
@@ -383,39 +354,97 @@ input[type="range"] {
    MOBILE
 ========================= */
 
-@media (max-width: 550px) {
+@media (max-width: 700px) {
 
     body {
-        padding: 15px;
+        padding: 20px;
     }
 
     .music-player {
-        padding: 22px;
+        max-width: 100%;
+        padding: 30px;
+    }
 
-        border-radius: 22px;
+    .player-header h1 {
+        font-size: 28px;
+    }
+
+    .player-header i {
+        width: 48px;
+        height: 48px;
+        font-size: 19px;
     }
 
     .album-cover {
-        width: 210px;
-        height: 210px;
+        width: 280px;
+        height: 280px;
     }
 
     .album-section h2 {
-        font-size: 22px;
+        font-size: 28px;
+    }
+
+    .album-section p {
+        font-size: 16px;
     }
 
     .controls {
-        gap: 18px;
+        gap: 22px;
     }
 
     .play-btn {
-        width: 60px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
+        font-size: 25px;
     }
 
     .control-btn {
-        width: 44px;
-        height: 44px;
+        width: 50px;
+        height: 50px;
     }
 
+    .playlist-header h3 {
+        font-size: 22px;
+    }
+
+    .song-info h4 {
+        font-size: 16px;
+    }
+
+    .song-info p {
+        font-size: 13px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .music-player {
+        padding: 20px;
+    }
+
+    .album-cover {
+        width: 220px;
+        height: 220px;
+    }
+
+    .player-header h1 {
+        font-size: 24px;
+    }
+
+    .album-section h2 {
+        font-size: 24px;
+    }
+
+    .controls {
+        gap: 15px;
+    }
 }
